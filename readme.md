@@ -7,7 +7,7 @@
   6. [账单列表](#账单列表)  
 
 ==========
-#注册、登陆、忘记密码、修改密码
+#注册、登陆、发送验证码
 ##注册  
 ####1、输入手机号，系统发送验证码到客户手机上
 <!-- 
@@ -15,11 +15,11 @@ curl -d "user[phone]=18628405094" http://lvh.me:3000/api/v1/users/sign_up
 curl -d "user[phone]=18628405091" http://115.28.160.65/api/v1/users/sign_up
 
 -->
-接口：http://115.28.160.65/api/v1/users/sign_up  
+接口：/api/session/register/{telphone}/{name}/{passwd}/{authcode}
 方法：POST  
 参数：
 ```ruby
-user[phone]=18628405091  #手机号
+无
 ```
 返回值:  
 ```ruby
